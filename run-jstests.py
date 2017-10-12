@@ -11,7 +11,7 @@ dev_dir = '/dev/shm'
 tests = [test for test in listdir(test_dir) if isfile(join(test_dir, test)) and test.endswith('js')]
 
 binary = ['buildscripts/resmoke.py']
-args = ['--continueOnFailure', '--suites=core', '--storageEngine=pmse', '--dbpath=/dev/shm']
+args = ['--continueOnFailure', '--storageEngine=pmse', '--dbpath=/dev/shm']
 
 
 failed = []
